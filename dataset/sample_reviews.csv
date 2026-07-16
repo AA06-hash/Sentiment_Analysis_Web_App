@@ -1,0 +1,11 @@
+text,expected_sentiment
+"I love this laptop, best purchase I've made all year!",Positive
+"This service is terrible and the staff were rude.",Negative
+"The package arrived on Tuesday and contained three items.",Neutral
+"Absolutely fantastic experience from start to finish.",Positive
+"I would not recommend this to anyone, total waste of money.",Negative
+"The meeting is scheduled for 10am on Thursday.",Neutral
+"The food was okay, nothing special but not bad either.",Neutral
+"Worst customer support I have ever dealt with.",Negative
+"Incredible attention to detail, I'm thoroughly impressed.",Positive
+"The report contains twelve pages and three appendices.",Neutral
