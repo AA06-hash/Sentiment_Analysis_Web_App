@@ -1,110 +1,102 @@
-````markdown
 # 😊 Sentiment Analysis Web Application
 
-> A modern Natural Language Processing (NLP) web application that analyzes user-entered text and classifies it as **Positive**, **Negative**, or **Neutral** using **TextBlob** and **Flask**.
+**A modern Natural Language Processing (NLP) web application that analyzes user-entered text and classifies it as Positive, Negative, or Neutral using TextBlob and Flask.**
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
-![TextBlob](https://img.shields.io/badge/TextBlob-NLP-orange)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat\&logo=python\&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-000000?style=flat\&logo=flask\&logoColor=white)
+![TextBlob](https://img.shields.io/badge/TextBlob-NLP-F7931E?style=flat)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat\&logo=bootstrap\&logoColor=white)
 
 ---
 
 ## ⭐ Key Highlights
 
-- Built using Python and Flask
-- NLP-based Sentiment Analysis using TextBlob
-- Interactive and responsive web interface
-- Real-time sentiment prediction
-- Displays polarity and subjectivity scores
-- Interactive sentiment gauge
-- Light/Dark mode support
-- Character counter and sample text buttons
-- Clean, modular project structure
+* Built using Python and Flask
+* NLP-powered sentiment analysis using TextBlob
+* Interactive and responsive web interface
+* Real-time sentiment prediction
+* Displays polarity and subjectivity scores
+* Interactive sentiment gauge
+* Light/Dark mode support
+* Character counter and sample text buttons
+* Copy result to clipboard
+* Modular project structure
 
 ---
 
-# 📌 Project Overview
+## 📌 Overview
 
-Sentiment Analysis is one of the most widely used applications of Natural Language Processing (NLP). This project allows users to enter any sentence or paragraph and instantly receive a sentiment analysis report.
+This project builds an end-to-end **Sentiment Analysis Web Application** that predicts the emotional tone of user-entered text using **TextBlob**.
 
-The application performs:
+Users can enter any sentence or paragraph and instantly receive:
 
-- 😊 Sentiment Classification
-- 📊 Polarity Analysis
-- 📈 Subjectivity Analysis
-- 🎯 Estimated Confidence Visualization
+* Sentiment classification (**Positive / Negative / Neutral**)
+* Polarity score
+* Subjectivity score
+* Estimated confidence indicator
 
-The project demonstrates the integration of **Python**, **Flask**, and **TextBlob** to build an interactive NLP web application with a clean and responsive user interface.
-
----
-
-# 🚀 Features
-
-### Sentiment Analysis
-
-- Positive 😊
-- Negative 😞
-- Neutral 😐
-
-### Text Analysis
-
-- Polarity Score
-- Subjectivity Score
-- Estimated Confidence
-
-### User Interface
-
-- Modern Dashboard
-- Responsive Design
-- Light/Dark Theme
-- Character Counter
-- Sample Input Buttons
-- Copy Result Button
-- Analysis Timestamp
+The application demonstrates the integration of **Flask**, **TextBlob**, **HTML/CSS/JavaScript**, and modern UI design to create a practical NLP-powered web application.
 
 ---
 
-# 🛠️ Technologies Used
+## ✨ Features
 
-| Category | Technologies |
-|----------|--------------|
-| Programming Language | Python 3.11 |
-| Backend | Flask |
-| NLP Library | TextBlob |
-| Frontend | HTML5 |
-| Styling | CSS3 |
-| Scripting | JavaScript |
-| UI Framework | Bootstrap 5 |
+* ✅ Real-time sentiment analysis
+* ✅ Positive / Negative / Neutral classification
+* ✅ Polarity score visualization
+* ✅ Subjectivity score visualization
+* ✅ Estimated confidence indicator
+* ✅ Interactive sentiment gauge
+* ✅ Dark/Light mode toggle
+* ✅ Character counter
+* ✅ Sample input buttons
+* ✅ Copy result button
+* ✅ Responsive Bootstrap UI
+* ✅ Modular Python project structure
 
 ---
 
-# 📂 Project Structure
+## 🛠️ Tech Stack
+
+| Category    | Tools             |
+| ----------- | ----------------- |
+| Language    | Python 3.11       |
+| Backend     | Flask             |
+| NLP Library | TextBlob          |
+| Frontend    | HTML5             |
+| Styling     | CSS3, Bootstrap 5 |
+| Scripting   | JavaScript        |
+
+---
+
+## 📁 Project Structure
 
 ```text
 Sentiment_Analysis_Web_App/
 │
-├── app.py
+├── app.py                          # Flask application entry point
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 │
 ├── src/
-│   ├── sentiment.py
-│   ├── validation.py
-│   ├── text_preprocessing.py
-│   └── utils.py
+│   ├── sentiment.py                # Sentiment analysis logic
+│   ├── validation.py               # Input validation
+│   ├── text_preprocessing.py       # Text preprocessing utilities
+│   └── utils.py                    # Helper functions
 │
 ├── static/
 │   ├── css/
-│   │      style.css
+│   │   └── style.css               # Custom styling
 │   ├── js/
-│   │      script.js
+│   │   └── script.js               # Frontend interactions
 │   └── images/
+│       └── logo.png
 │
 ├── templates/
-│   ├── index.html
-│   ├── about.html
-│   └── result.html
+│   ├── index.html                  # Main UI page
+│   ├── about.html                  # About page
+│   └── result.html                 # Result template
 │
 ├── screenshots/
 │   ├── home.png
@@ -119,7 +111,7 @@ Sentiment_Analysis_Web_App/
 
 ---
 
-# ⚙️ Workflow
+## 🔄 Workflow
 
 ```text
 User Input
@@ -131,7 +123,10 @@ Input Validation
 Flask Backend
      │
      ▼
-TextBlob Processing
+Text Preprocessing
+     │
+     ▼
+TextBlob Analysis
      │
      ▼
 Calculate Polarity
@@ -148,73 +143,69 @@ Display Results
 
 ---
 
-# 📊 Sentiment Logic
+## 📊 Sentiment Logic
 
 ### Polarity
 
-| Score | Sentiment |
-|--------|-----------|
-| > 0 | 😊 Positive |
-| = 0 | 😐 Neutral |
-| < 0 | 😞 Negative |
+| Score | Sentiment   |
+| ----- | ----------- |
+| > 0   | 😊 Positive |
+| = 0   | 😐 Neutral  |
+| < 0   | 😞 Negative |
 
 ### Subjectivity
 
-| Score | Interpretation |
-|--------|----------------|
-| 0.00 – 0.30 | Objective |
+| Score       | Interpretation        |
+| ----------- | --------------------- |
+| 0.00 – 0.30 | Objective             |
 | 0.31 – 0.70 | Moderately Subjective |
-| 0.71 – 1.00 | Highly Subjective |
+| 0.71 – 1.00 | Highly Subjective     |
 
 ---
 
-# 📷 Application Screenshots
+## 📷 Application Screenshots
 
-## 🏠 Home Page
+### Home Page
 
 ![Home](screenshots/home.png)
 
-## 😊 Positive Result
+### Positive Result
 
 ![Positive](screenshots/positive_result.png)
 
-## 😞 Negative Result
+### Negative Result
 
 ![Negative](screenshots/negative_result.png)
 
-## 😐 Neutral Result
+### Neutral Result
 
 ![Neutral](screenshots/neutral_result.png)
 
 ---
 
-# 💻 Installation
-
-### Clone the Repository
+## ⚙️ Installation
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/AA06-hash/Sentiment_Analysis_Web_App.git
-```
-
-### Navigate to the Project Directory
-
-```bash
 cd Sentiment_Analysis_Web_App
-```
 
-### Install Required Dependencies
+# 2. (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate      # On Windows: venv\\Scripts\\activate
 
-```bash
+# 3. Install dependencies
 pip install -r requirements.txt
-```
 
-### Download TextBlob Corpora
-
-```bash
+# 4. Download TextBlob corpora
 python -m textblob.download_corpora
 ```
 
-### Run the Application
+---
+
+## ▶️ Usage
+
+Run the Flask application:
 
 ```bash
 python app.py
@@ -226,9 +217,36 @@ Open your browser and visit:
 http://127.0.0.1:5000
 ```
 
+The application will:
+
+1. Accept user-entered text
+2. Analyze sentiment using TextBlob
+3. Calculate polarity and subjectivity
+4. Classify sentiment
+5. Display interactive results instantly
+
 ---
 
-# 🧪 Sample Inputs
+## 📊 Example Output
+
+**Input**
+
+```text
+I absolutely love this product. It exceeded my expectations and made my day.
+```
+
+**Output**
+
+```text
+Sentiment      : Positive 😊
+Polarity       : 0.62
+Subjectivity   : 0.75
+Confidence     : High
+```
+
+---
+
+## 🧪 Sample Inputs
 
 ### Positive
 
@@ -250,53 +268,50 @@ The meeting starts at 10:00 AM tomorrow in the conference room.
 
 ---
 
-# 📈 Future Enhancements
+## 🚀 Future Enhancements
 
-- Machine Learning-based Sentiment Classification
-- Logistic Regression
-- Naive Bayes
-- Support Vector Machine (SVM)
-- BERT Transformer Integration
-- Multi-language Support
-- Speech-to-Text Sentiment Analysis
-- File Upload Support
-- REST API Development
-- Docker Deployment
-- Cloud Deployment (Render, Railway, AWS)
-
----
-
-# 📄 Deliverables
-
-- ✅ Flask Web Application
-- ✅ Python Source Code
-- ✅ HTML/CSS/JavaScript Files
-- ✅ Project Report (PDF)
-- ✅ PowerPoint Presentation
-- ✅ Screenshots
-- ✅ README Documentation
-- ✅ requirements.txt
-- ✅ GitHub Repository
+* [ ] Machine Learning-based sentiment classification
+* [ ] Logistic Regression / Naive Bayes models
+* [ ] BERT transformer integration
+* [ ] Multi-language support
+* [ ] Voice-to-text sentiment analysis
+* [ ] File upload support (.txt / .pdf)
+* [ ] Sentiment history dashboard
+* [ ] REST API development
+* [ ] Docker deployment
+* [ ] Cloud deployment (Render / Railway / AWS)
 
 ---
 
-# ⚠️ Limitations
+## ⚠️ Limitations
 
-This project uses **TextBlob**, a lexicon-based sentiment analysis library. While it performs well for straightforward sentiment classification, it may not accurately interpret sarcasm, irony, or complex mixed-emotion statements. Future versions can leverage transformer-based language models such as **BERT** for improved contextual understanding and prediction accuracy.
+This project uses **TextBlob**, a lexicon-based sentiment analysis library. It performs well for straightforward sentiment classification but may not accurately interpret sarcasm, irony, or complex mixed-emotion sentences.
+
+Future versions can integrate transformer-based language models such as **BERT** for improved contextual understanding and prediction accuracy.
 
 ---
 
-# 👩‍💻 Author
+## 📄 Deliverables
+
+* ✅ Flask Web Application
+* ✅ Python Source Code
+* ✅ HTML/CSS/JavaScript Files
+* ✅ Project Report (PDF)
+* ✅ PowerPoint Presentation
+* ✅ Screenshots
+* ✅ README Documentation
+* ✅ requirements.txt
+* ✅ GitHub Repository
+
+---
+
+## 👤 Author
 
 **Avani Ashiha**
 
-**B.Tech CSE (AI & DS)**
-
-GitHub: https://github.com/AA06-hash
+* GitHub: https://github.com/AA06-hash
+* LinkedIn: https://www.linkedin.com/in/avani-ashiha-s-15983a291/
 
 ---
 
-## ⭐ Support
-
-If you found this project helpful, consider giving it a **Star ⭐** on GitHub.
-````
+If you found this project useful, consider giving it a ⭐ on GitHub!
