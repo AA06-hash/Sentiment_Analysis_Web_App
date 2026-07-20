@@ -165,23 +165,27 @@ Display Results
 
 ## 📷 Application Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-![Home]("screenshots\home.png")
-
-### Positive Result
-
-![Positive]("screenshots\positive.png")
-
-### Negative Result
-
-![Negative]("screenshots\negative.png")
-
-### Neutral Result
-
-![Neutral]("screenshots\neutral.png")
+![Home](./screenshots/home.png)
 
 ---
+
+### 😊 Positive Result
+
+![Positive](./screenshots/positive.png)
+
+---
+
+### 😞 Negative Result
+
+![Negative](./screenshots/negative.png)
+
+---
+
+### 😐 Neutral Result
+
+![Neutral](./screenshots/neutral.png)
 
 ## ⚙️ Installation
 
