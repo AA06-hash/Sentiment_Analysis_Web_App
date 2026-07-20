@@ -167,19 +167,19 @@ Display Results
 
 ### Home Page
 
-![Home]("C:\QSkill Intership\Sentiment_Analysis_Web_App\screenshots\home.png")
+![Home]("screenshots\home.png")
 
 ### Positive Result
 
-![Positive]("C:\QSkill Intership\Sentiment_Analysis_Web_App\screenshots\positive.png")
+![Positive]("screenshots\positive.png")
 
 ### Negative Result
 
-![Negative]("C:\QSkill Intership\Sentiment_Analysis_Web_App\screenshots\negative.png")
+![Negative]("screenshots\negative.png")
 
 ### Neutral Result
 
-![Neutral]("C:\QSkill Intership\Sentiment_Analysis_Web_App\screenshots\neutral.png")
+![Neutral]("screenshots\neutral.png")
 
 ---
 
